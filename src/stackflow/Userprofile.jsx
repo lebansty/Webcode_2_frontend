@@ -16,7 +16,7 @@ function Userprofile() {
 
    let loadData = async ()=>{
 try {
-  let userDet = await axios.get('http://localhost:3000/userDet',{
+  let userDet = await axios.get('https://webcode2stackoverflow.herokuapp.com/userDet',{
     headers:{
       'auth':window.localStorage.getItem('app-token'),
       'userId':window.localStorage.getItem('userId')
@@ -34,7 +34,7 @@ try {
    },[])
 
    let quesData=async()=>{
-let dataQ = await axios.get('http://localhost:3000/get-ques',{
+let dataQ = await axios.get('https://webcode2stackoverflow.herokuapp.com/get-ques',{
   headers:{
     'auth':window.localStorage.getItem('app-token'),
     'userId':window.localStorage.getItem('userId')

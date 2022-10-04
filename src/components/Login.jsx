@@ -26,7 +26,7 @@ function Login() {
     },
     onSubmit:async(values) => {
         try {
-           let tok = await axios.post('http://localhost:3000/loginc',values)
+           let tok = await axios.post('https://webcode2stackoverflow.herokuapp.com/loginc',values)
            if(tok.data.userId){
             window.localStorage.setItem('app-token',tok.data.token)
           window.localStorage.setItem('userId',tok.data.userId)

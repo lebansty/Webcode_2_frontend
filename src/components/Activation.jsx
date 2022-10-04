@@ -10,7 +10,7 @@ function Activation() {
   const [msg,setMsg] =useState('verifying...')
 let loadData =async()=>{
 try {
- let msgDis= await axios.get('http://localhost:3000/token-verifi',{
+ let msgDis= await axios.get('https://webcode2stackoverflow.herokuapp.com/token-verifi',{
 headers:{
   'auth':token
 }

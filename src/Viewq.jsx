@@ -17,7 +17,7 @@ function Viewq() {
     let loadData = async () => {
         try {
 
-            let uData = await axios.get(`http://localhost:3000/ques/${params.id}`, {
+            let uData = await axios.get(`https://webcode2stackoverflow.herokuapp.com/ques/${params.id}`, {
                 headers: {
                     'auth': window.localStorage.getItem('app-token'),
                 }
@@ -35,7 +35,7 @@ function Viewq() {
     },[])
     let viewedCount =async ()=>{
         try {
-          let viewedC = await axios.get(`http://localhost:3000/view-count/${params.id}`,{
+          let viewedC = await axios.get(`https://webcode2stackoverflow.herokuapp.com/view-count/${params.id}`,{
             headers:{
               'auth':window.localStorage.getItem('app-token'),
                   'userid':window.localStorage.getItem('userId')
@@ -60,7 +60,7 @@ function Viewq() {
             values.userid = window.localStorage.getItem('userId')
 
             try {
-                await axios.put(`http://localhost:3000/cmtpost/${params.id}`, values, {
+                await axios.put(`https://webcode2stackoverflow.herokuapp.com/cmtpost/${params.id}`, values, {
                     headers: {
                         'auth': window.localStorage.getItem('app-token'),
 
@@ -75,7 +75,7 @@ function Viewq() {
     })
     let vote = async () => {
         try {
-            let val = await axios.get(`http://localhost:3000/positive-vote/${params.id}`, {
+            let val = await axios.get(`https://webcode2stackoverflow.herokuapp.com/positive-vote/${params.id}`, {
                 headers: {
                     'auth': window.localStorage.getItem('app-token'),
                     'userId': window.localStorage.getItem('userId')
@@ -90,7 +90,7 @@ function Viewq() {
     }
     let nVote = async () => {
         try {
-            let val = await axios.delete(`http://localhost:3000/negative-vote/${params.id}`, {
+            let val = await axios.delete(`https://webcode2stackoverflow.herokuapp.com/negative-vote/${params.id}`, {
                 headers: {
                     'auth': window.localStorage.getItem('app-token'),
                     'userId': window.localStorage.getItem('userId')

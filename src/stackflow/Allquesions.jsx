@@ -11,7 +11,7 @@ loadData()
 },[])
     let loadData=async()=>{
 try {
-    let data = await axios.get('http://localhost:3000/all-ques',{
+    let data = await axios.get('https://webcode2stackoverflow.herokuapp.com/all-ques',{
         headers:{
           'auth':window.localStorage.getItem('app-token'),
           'userid':window.localStorage.getItem('userId')

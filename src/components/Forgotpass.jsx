@@ -18,7 +18,7 @@ function Forgotpass() {
         },
         onSubmit:async(values) => {
             try {
-                let verify = await axios.post('http://localhost:3000/verify-email',values)
+                let verify = await axios.post('https://webcode2stackoverflow.herokuapp.com/verify-email',values)
                console.log(verify)
             } catch (error) {
                 console.log(error)
