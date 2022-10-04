@@ -127,7 +127,7 @@ function Viewq() {
                         comment ? comment.map((arr, idx) => {
                             return (
                                 <>
-                                   <div className="col-md-8 mt-2 g-2">
+                                   <div className="col-md-8  g-2">
                                     <div key={idx}>
                                       comment {idx+1} : {arr.lines}
                                     </div>

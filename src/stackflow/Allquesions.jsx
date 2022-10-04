@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 function Allquesions() {
     
     const [questions,setQuestions] =useState([])
-    
+
 useEffect(()=>{
 loadData()
 },[])
@@ -59,17 +59,17 @@ try {
                     <div className="col-md-3" >
                        <div className="row">
                         <div className="col-md-12">
-  {val.votes.length} voted
+  {val.votes.length ? val.votes.length:null } voted
                         </div>
                        </div>
                        <div key={idx+"s"} className="row">
                         <div className="col-md-12">
-                       {val.comments.length} comments
+                       {val.comments.length ? val.comments.length:null} comments
                         </div>
                        </div>
                        <div key={idx+"l"} className="row">
                         <div className="col-md-12">
-                         {val.views.length} viewed
+                         {val.views.length ? val.views.length:null} viewed
                         </div>
                        </div>
                     </div>
