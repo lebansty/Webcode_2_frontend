@@ -1,12 +1,13 @@
 // import axios from 'axios'
 import axios from 'axios'
 import { useFormik } from 'formik'
+import { useState } from 'react';
 
 import { Link, useNavigate } from 'react-router-dom'
 
 
 function Login() {
-    
+    const[vali,setVali] = useState()
     let navigate =useNavigate();
   let formik = useFormik({
     initialValues: {
@@ -32,8 +33,8 @@ function Login() {
         
            
 navigate('/home')
-           }else{
-            console.log('something went wrong')
+           }if(tok.data.messege){
+           setVali(tok.data.messege)
            }
            console.log(tok)
         } catch (error) {
@@ -50,11 +51,15 @@ navigate('/home')
                 <div class="mb-3">
                     <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
                     <input type="email" name='email'value={formik.values.email} onChange={formik.handleChange} class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                    <div id="emailHelp" class="form-text">Enter your registered email id.</div>
+                    <div id="emailHelp" class="form-text">{formik.errors.email ? <div style={{color:'red'}}>Enter valid email </div>:vali ?<div style={{color:'red'}}>{vali} </div> :"Enter registreed email id"}</div>
                 </div>
                 <div class="mb-3">
                     <label htmlFor="exampleInputPassword1" class="form-label">Password</label>
                     <input name="password" value={formik.values.password} onChange={formik.handleChange} type="password" class="form-control" id="exampleInputPassword1" />
+               {formik.errors.password ? (<div style={{color:'red'}}>Enter Password</div>) :null
+                
+                
+                }
                 </div>
                 <div>
                     <Link style={{ marginTop: '32px' }} to={'/forgotpasscode'}>Forgot password</Link>

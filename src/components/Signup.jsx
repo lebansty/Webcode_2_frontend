@@ -18,6 +18,9 @@ function Signup() {
         },
         validate: (values) => {
             let errors = {}
+            if(values.firstName === ''){
+                errors.firstName ="Enter your name"
+            }
             if (values.email === '') {
                 errors.email = "Enter email address"
             }
@@ -47,9 +50,9 @@ function Signup() {
            <div className="row">
             <div className="col-6">
             <div className="mb-3">
-                    <label htmlFor="exampleInputFirst1" className="form-label">First name</label>
+                    <label htmlFor="exampleInputFirst1" className="form-label">First name*</label>
                     <input type="name" name='firstName'value={formik.values.firstName} onChange={formik.handleChange} class="form-control" id="exampleInputFirst1"  />
-                    
+                    {formik.errors.firstName ? <p style={{color:"red"}}>Enter your name</p>:null}
                 </div>
             </div>
             <div className="col-6">
@@ -61,13 +64,15 @@ function Signup() {
             </div>
            </div>
                 <div class="mb-3">
-                    <label htmlFor="exampleInputEmail1" className="form-label">Email your email (Username)</label>
+                    <label htmlFor="exampleInputEmail1" className="form-label">Email your email* (Username)</label>
                     <input type="email" name='email'value={formik.values.email} onChange={formik.handleChange} class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                    <div id="emailHelp" class="form-text">Enter a valid email id.</div>
+                    
+                    {formik.errors.email ? <p style={{color:"red"}}>Enter your email</p>:<div id="emailHelp" class="form-text">Enter a valid email id.</div>}
                 </div>
                 <div class="mb-3">
-                    <label htmlFor="exampleInputPassword1" class="form-label">Create a password </label>
+                    <label htmlFor="exampleInputPassword1" class="form-label">Create a password* </label>
                     <input name="password" value={formik.values.password} onChange={formik.handleChange} type="password" class="form-control" id="exampleInputPassword1" />
+                    {formik.errors.password ? <p style={{color:"red"}}>Enter a password</p>:null}
                 </div>
                 
                 <div className='bton'>
