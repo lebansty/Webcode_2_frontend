@@ -52,7 +52,7 @@ try {
 
                 return(
                  <>
-                 <div className="row mt-3 all-ques">
+                 <div className="row mt-3 mb-5 all-ques">
         <div className="col-md-12">
                    
                     <div className="row" style={{paddingTop:'30px'}} key={idx}>
