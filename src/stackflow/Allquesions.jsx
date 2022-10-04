@@ -59,17 +59,17 @@ try {
                     <div className="col-md-3" >
                        <div className="row">
                         <div className="col-md-12">
-  {val.votes ? val.votes.length:null } voted
+  {val.votes ? val.votes.length:0 } voted
                         </div>
                        </div>
                        <div key={idx+"s"} className="row">
                         <div className="col-md-12">
-                       {val.comments ? val.comments.length:null} comments
+                       {val.comments ? val.comments.length:0} comments
                         </div>
                        </div>
                        <div key={idx+"l"} className="row">
                         <div className="col-md-12">
-                         {val.views ? val.views.length:null} viewed
+                         {val.views ? val.views.length:0} viewed
                         </div>
                        </div>
                     </div>
