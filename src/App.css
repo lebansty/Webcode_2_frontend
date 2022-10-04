@@ -1,38 +1,187 @@
-.App {
+
+
+.signup{
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 15px;
+  background-color:beige;
+  height: 500px;
+  padding-top: 50px;
+  position: relative;
+  top:-170px;
+  text-align:left;
+}
+.head{
+  height: 300px;
+  background-color: bisque;
   text-align: center;
+  padding-top: 50px;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login{
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 15px;
+  background-color:beige;
+  height: 450px;
+  padding-top: 50px;
+  position: relative;
+  top:-170px;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mailverify{
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 15px;
+  background-color:beige;
+  height: 350px;
+  padding-top: 100px;
+  position: relative;
+  top:-170px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.acti{
+  height: 400px;
+  width: 400px;
+  position: relative;
+  top:-100px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 25px;
+  font-family: cursive;
+  font-weight: 800;
+background: rgba(255, 255, 255, 0.85);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+-webkit-backdrop-filter: blur(0.2px);
+backdrop-filter: blur(0.2px);
+
+border: 1px solid rgba(255, 255, 255, 0.18);
+box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  
+}
+.modify{
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  background-color: blanchedalmond !important;
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0;
+  z-index: 1;
+}
+.nav-item{
+  padding-right: 10px;
+}
+.searchB{
+  margin-left: 150px;
+}
+.btntag{
+  border: 1px solid black;
+}
+.btntag:hover{
+  background-color: burlywood !important;
+}
+/* .vertical{
+  border-right: 1px solid black;
+  height: 100vh;
+} */
+.lists li{
+  padding: 10px;
+ list-style: none;
+}
+.bord{
+  
+  height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.15) 3px 0px 2.95px -2.3px;
+ }
+.profile{
+  
+  height: 100px;
+  width: 100px;
+  
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+font-size: 50px;
+background-color: darkcyan;
+color: azure;
+box-shadow: rgba(0, 0, 0, 0.15) 3px 0px 2.95px -2.3px;
+}
+.nameFont{
+  font-size: 35px;
+  font-weight: 400;
+  margin-top: 65px;
+}
+.quesbtn{
+  text-decoration: none;
+  border: 1px solid black;
+  height: 100px;
+  width: 70px;
+}
+.question-contain{
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.15) 3px 0px 2.95px -2.3px;
+}
+.sidebarNav{
+  text-decoration: none;
+  color: darkgray;
+}
+.sidebarNav:hover{
+  
+  color: black;
+}
+.comment-show-case{
+  min-height: 250px;
+  padding-left: 25px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+/* 10px 0 5px -2px */
+.all-ques{
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  min-height: 150px;
+  background-color:beige ;
+}
+.sing-ques{
+  text-decoration: none;
+  color: cadetblue;
+}
+.footerZ{
+  background-color: grey;
+  color:beige;
+  height: 300px;
+  text-align: center;
+  padding-top: 130px;
+  
+}
+.iconsBrand{
+  margin-left: 30px;
+}
+.enterQ{
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  min-height: 500px;
+  padding-top: 30px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width: 992px) {
+  .searchInput {
+    width: 200px;
   }
 }
+@media screen and (min-width:1150px) {
+  .searchInput{
+    width:400px;
+  }
+}
+@media screen and (max-width:990px) {
+  .searchInput{
+    width:400px;
+  }
+}
+@media screen and (max-width:750px) {
+  .searchInput{
+    width:200px;
+  }
+}
+  .rightBar{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
