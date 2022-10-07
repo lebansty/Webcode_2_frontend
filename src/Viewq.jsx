@@ -14,7 +14,7 @@ function Viewq() {
     const [rend,setRend] = useState(0)
     useEffect(() => {
         loadData();
-    }, [])
+    }, [rend])
     let loadData = async () => {
         try {
 
@@ -33,7 +33,7 @@ function Viewq() {
     }
     useEffect(()=>{
         viewedCount()
-    },[rend])
+    },[])
     let viewedCount =async ()=>{
         try {
           let viewedC = await axios.get(`https://webcode2stackoverflow.herokuapp.com/view-count/${params.id}`,{
