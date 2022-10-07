@@ -117,7 +117,7 @@ function Viewq() {
 
                 <div className="col-md-3">
                     <div><FontAwesomeIcon icon={faCircleChevronUp} style={{fontSize:'30px',color:"#8A8A8A"}} onClick={vote} className='mb-3'/></div>
-                    <b>votes{long ? long.length:0}</b>
+                    <b>votes {long ? long.length:0}</b>
                     <div><FontAwesomeIcon onClick={nVote} style={{fontSize:'30px',color:'#8A8A8A'}} className="mt-3"  icon={faCircleChevronDown}  /></div>
                 </div>
                 <div className="col-md-8">

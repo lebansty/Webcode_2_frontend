@@ -61,7 +61,7 @@ let letter = user.firstName.split('')
 questions ? questions.map((val,index)=>{
 
   return(
-    <div className="row" >
+    <div className="row mb-4" >
     <div className="col-md-10 mt-5">
     <div key={index} class="card">
 <div class="card-header">
