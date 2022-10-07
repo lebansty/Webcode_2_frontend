@@ -11,6 +11,7 @@ function Viewq() {
     const [comment, setComment] = useState([])
     const [long, setLong] = useState([])
     const [nView , setNview] = useState([])
+    const [rend,setRend] = useState(0)
     useEffect(() => {
         loadData();
     }, [])
@@ -32,7 +33,7 @@ function Viewq() {
     }
     useEffect(()=>{
         viewedCount()
-    },[])
+    },[rend])
     let viewedCount =async ()=>{
         try {
           let viewedC = await axios.get(`https://webcode2stackoverflow.herokuapp.com/view-count/${params.id}`,{
@@ -83,7 +84,8 @@ function Viewq() {
             })
             
             console.log(val)
-            window.location.reload();
+            setRend(rend+1)
+            // window.location.reload();
         } catch (error) {
             console.log(error)
         }
@@ -96,7 +98,8 @@ function Viewq() {
                     'userId': window.localStorage.getItem('userId')
                 }
             })
-           window.location.reload();
+        //    window.location.reload();
+           setRend(rend+1)
             console.log(val)
         } catch (error) {
             console.log(error)
