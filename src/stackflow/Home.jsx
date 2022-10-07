@@ -14,6 +14,7 @@ function Home() {
             <li><Link className='sidebarNav' to={'/home/searchques'}>Tags</Link></li>
             <li><Link className='sidebarNav' to={'/home/userprofile'}>Users</Link></li>
             <li> <Link className='sidebarNav' to={'/home/companies'}>Companies</Link></li>
+            <li><Link className='sidebarNav' to={"/"}>Logout</Link></li>
           </ul>
  
         {/* <div className="col-md-7" >
