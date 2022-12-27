@@ -88,11 +88,7 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 
   padding: 10px;
  list-style: none;
 }
-.bord{
-  border-right: 1px solid gainsboro;
-  height: 100%;
- 
- }
+
 .profile{
   
   height: 100px;
@@ -121,6 +117,7 @@ box-shadow: rgba(0, 0, 0, 0.15) 3px 0px 2.95px -2.3px;
 .question-contain{
   height: 100%;
   box-shadow: rgba(0, 0, 0, 0.15) 3px 0px 2.95px -2.3px;
+  border-left: 1px solid gainsboro;
 }
 .sidebarNav{
   text-decoration: none;
