@@ -89,9 +89,18 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 
  list-style: none;
 }
 .bord{
-  
-  height: 100vh;
-  box-shadow: rgba(0, 0, 0, 0.15) 3px 0px 2.95px -2.3px;
+  border-right: 1px solid black;
+ 
+
+
+  height: 100%;
+ 
+
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
  }
 .profile{
   
