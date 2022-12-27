@@ -56,7 +56,7 @@ if(values.email === ""){
     onSubmit: async (values)=>{
 try {
   console.log(values)
-await axios.put("https://webcode2stackoverflow.herokuapp.com/update",values,{
+await axios.put("https://webcode2-backend.vercel.app/update",values,{
 headers:{
   'authorization':token
 }

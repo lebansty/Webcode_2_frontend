@@ -31,7 +31,7 @@ function Signup() {
         },
         onSubmit: async (values) => {
         try {
-            let insert = await axios.post('https://webcode2stackoverflow.herokuapp.com/userpost',values)
+            let insert = await axios.post('https://webcode2-backend.vercel.app/userpost',values)
             console.log(insert)
             setMsg(insert.data.messege)
             handleShow()

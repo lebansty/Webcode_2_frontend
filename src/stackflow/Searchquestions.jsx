@@ -19,7 +19,7 @@ function Searchquestions() {
       let keyWord = {
         tag: window.localStorage.getItem('search-word')
       }
-      let searchTag = await axios.post('https://webcode2stackoverflow.herokuapp.com/search', keyWord, {
+      let searchTag = await axios.post('https://webcode2-backend.vercel.app/search', keyWord, {
         headers: {
           'auth': window.localStorage.getItem('app-token')
         }
